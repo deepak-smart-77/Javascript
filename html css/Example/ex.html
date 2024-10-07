@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flexbox</title>
+    <style>
+        .header {
+            display: flex;
+            flex-direction: row;
+            background-color: blueviolet;
+            height: 50px;
+        }
+        .first-sec {
+            width: 85px;
+            color: white;
+            font-weight: bold;
+            font-family: Arial;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        .middle-sec {
+            flex: 1;
+            margin-top: 8px;
+            
+        }
+        .search-box {
+            padding: 7px;
+            border-radius: 25px;
+            border-style: solid;
+            padding-left: 20px;
+            width: 100%;
+        }
+
+        .last-sec {
+            width: 85px;
+            margin-left: 100px;
+            margin-top: 6px;
+            margin-right: 5px;
+            
+        }
+        button {
+            padding: 10px;
+            border-style: solid;
+            border-color: white;
+            color: white;
+            font-family: Arial;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+    <div class="first-sec">Home</div>
+    <div class="middle-sec">
+        <input class="search-box" type="text" placeholder="search">
+    </div>
+    <div class="last-sec">
+        <button>Download</button>
+    </div>
+</div>
+</body>
+</html> 
