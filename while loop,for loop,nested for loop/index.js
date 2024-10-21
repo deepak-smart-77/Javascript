@@ -44,7 +44,7 @@
 
 // while (!isRaining) {
 //     console.log("Watering plants");
-    
+
 //     // Simulate rain starting at some point
 //     if (Math.random() > 0.8) { // Randomly start raining
 //         isRaining = true;
@@ -112,38 +112,37 @@
 //     }
 // }
 
-// let symbol = window.prompt("enter a symbol")
-// let row = window.prompt("enter # of rows");
-// let column = window.prompt("enter # of columns");
+let symbol = window.prompt("enter a symbol");
+let row = window.prompt("enter # of rows");
+let column = window.prompt("enter # of columns");
 
-// for(let i = 1; i <= row; i+=1){
-//     for(let j = 1; j <= column; j+=1){
-//         document.getElementById("rec").innerHTML += symbol;
-//     }
-//     document.getElementById("rec").innerHTML += "<br>"
-// }
+for(let i = 1; i <= row; i+=1){
+    for(let j = 1; j <= column; j+=1){
+        document.getElementById("rec").innerHTML += symbol;
+    }
+    document.getElementById("rec").innerHTML += "<br>"
+}
 
 
 // const height = 5;
 
-// for(let i = 1; i <= height; i++){
-//     let row = "";
+// for (let i = 1; i < height + 1; i++) {
+//     let star=""
+//     for (let j = 1; j <= i; j++) {
+//         star+="*"
 
-//     for(let j = 1; j <= height ; j++){
-//         row += " "
-
-//         for(let j = 1; j<= (2*i-1); j++ ){
-//             row += "*"
-//         }
 //     }
-//     console.log(row);
+//     console.log(star)
 // }
 
 //-----??????????????????????
 
-for(let i = 1; i <= 5; i++){
-    for(let j = 1; j <= 5; j++){
-        document.getElementById("tables").innerHTML += i;
-    }
-    document.getElementById("tables").innerHTML += "<br>"
-}
+// for(let i = 1; i <= 5; i++){
+//     let number=0;
+//     for(let j = 1; j <= 5; j++){
+//         number+=i;
+//         document.getElementById("tables").innerHTML += number;
+
+//     }
+//     document.getElementById("tables").innerHTML += "<br>"
+// }
