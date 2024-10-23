@@ -11,3 +11,4 @@ console.log("Enrolled:",student);
 document.getElementById("p1").innerHTML = "Hello " + firstname
 document.getElementById("p2").innerHTML = "you are " + age + " years old"
 document.getElementById("p3").innerHTML = "Enrolled: " + student
+// I made some changes
