@@ -1,4 +1,7 @@
+
+
 let students = 40;
+
 //students = students + 1;
 //students = students - 1;
 //students = students * 2;
@@ -10,4 +13,4 @@ let students = 40;
 let extrastudents = students / 2;
 extrastudents += 2;
 
- console.log(extrastudents);
+console.log(extrastudents);
