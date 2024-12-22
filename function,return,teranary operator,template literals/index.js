@@ -1,15 +1,15 @@
-// function startProgram(){
-//     let userName = "deepak";
-//     let age = 20;
+function startProgram(){
+    let userName = "deepak";
+    let age = 20;
 
-//     happyBirthday(userName,age);
-// }
+    happyBirthday(userName,age);
+}
 
-// function happyBirthday(userName,age){
-//     console.log("happy birthday to",userName ,"..You r",age,"years old");
-// }
+function happyBirthday(userName,age){
+    console.log("happy birthday to",userName ,"..You r",age,"years old");
+}
 
-// startProgram();
+startProgram();
 
 
 // return--->
@@ -45,7 +45,7 @@
 //     return age >= 18 ? true : false
 // }
 
-
+ 
 // checkWinner(true)
 
 // function checkWinner(win){
@@ -56,13 +56,13 @@
 
 //template literals---------
 
-let userName = "Deepak";
-let age = 20;
-let hobby = "Developer";
+// let userName = "Deepak";
+// let age = 20;
+// let hobby = "Developer";
 
 // console.log("I'm",userName,age,"years old..i wish to become a",hobby)
 // console.log(`I'm ${userName} ${age}years old..i wist to become a ${hobby}`);
 
-let text = `I'm ${userName} ${age}years old..i wist to become a ${hobby}`;
-console.log(text);
+// let text = `I'm ${userName} ${age}years old..i wist to become a ${hobby}`;
+// console.log(text);
 // document.getElementById("myLabel").innerHTML = text;
