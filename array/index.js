@@ -1,7 +1,7 @@
 //  let fruits = ["apple","banana","orange"];
 
-// //  console.log(fruits);
-// // console.log(fruits[2]);
+//  console.log(fruits);
+// console.log(fruits[2]);
 
 // fruits[1] = "strawberry";    // change the value
 // // console.log(fruits);
