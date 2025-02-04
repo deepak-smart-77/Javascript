@@ -78,11 +78,32 @@
 
 //----array.reduce()----
 
-let prices = [ 12, 24, 67];
-let totalPrice = prices.reduce(add);
+// let prices = [ 12, 24, 67];
+// let totalPrice = prices.reduce(add);
 
-console.log(totalPrice);
+// console.log(totalPrice);
 
-function add(total, element){
-    return total + element;
+// function add(total, element){
+//     return total + element;
+// }
+
+
+//---array.sot()----
+
+
+let grades = [20, 50, 100, 40]
+
+grades = grades.sort(ascendingsort);
+
+grades.forEach(print)
+
+function desendingsort(x,y){
+    return y-x;
+}
+function ascendingsort(x,y){
+    return x-y;
+}
+
+function print(element){
+    console.log(element);
 }
