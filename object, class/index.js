@@ -69,24 +69,130 @@
 // student1.study();
 // student2.study();
 
-//------static---//
+// //------static---//
 
-class cars{
-    static no_of_cars = 0;
+// class cars{
+//     static no_of_cars = 0;
 
-    constructor(model){
-        this.model =model;
-        cars.no_of_cars += 1;
+//     constructor(model){
+//         this.model =model;
+//         cars.no_of_cars += 1;
+//     }
+//     static startrace(){
+//         console.log("3....2.....1....GO!!!");
+//     }
+// }
+
+// const car1 = new cars("bugatti")
+// const car2 = new cars("ferrari")
+// const car3 = new cars("audi")
+
+
+// console.log(`There are ${cars.no_of_cars} cars `);
+// cars.startrace();
+
+
+// //---inheritance---//
+
+// class Animal{
+//     alive = true;
+//     eat(){
+//         console.log(`This ${this.name} is Eating`);
+//     }
+//     sleep(){
+//         console.log(`This ${this.name} is sleeping`);
+//     }
+// }
+
+// class Dog extends Animal{
+//     name = "Dog"; 
+//     run(){
+//         console.log(`This ${this.name} is running`);
+//     }
+// }
+
+// class Fish extends Animal{
+//     name = "Fish";
+//     swim(){
+//         console.log(`This ${this.name} is swimming`);
+//     }
+// }
+
+// class Eagle extends Animal{
+//     name = "Eagle";
+//     fly(){
+//         console.log(`This ${this.name} is flying`);
+//     }
+// }
+
+// const dog = new Dog();
+// const fish = new Fish();
+// const eagle = new Eagle();
+// console.log(fish.name);
+// console.log(fish.alive);
+// fish.eat();
+// dog.run();
+// eagle.fly();
+
+// //---super keyword----
+
+// class Animal{
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;    }
+// }
+// class Rabbit extends Animal{
+//     constructor(name,age,runSpeed){
+//         super(name,age);
+//         this.runSpeed = runSpeed;
+//     }
+
+// }
+// class Fish extends Animal{
+//     constructor(name,age,swimSpeed){
+//         super(name,age);
+//         this.swimSpeed = swimSpeed;
+//     }
+// }
+// class Hawk extends Animal{
+//     constructor(name,age,flySpeed){
+//         super(name,age);
+//         this.flySpeed = flySpeed;
+//     }
+
+// }
+
+// const fish = new Fish("Pirana",1,50);
+// const hawk = new Hawk("Hawk",2,80);
+// const rabbit = new Rabbit("Rabbit",1,40);
+
+// // console.log(fish.name);
+// // console.log(fish.age);
+// // console.log(fish.swimSpeed);
+// // console.log(rabbit.name);
+// // console.log(rabbit.age);
+// // console.log(rabbit.runSpeed);
+// console.log(hawk.name);
+// console.log(hawk.age);
+// console.log(hawk.flySpeed);
+
+
+//-----getter setter----//
+
+class Car{
+    constructor(power){
+        this._gas = 21;
+        this._power = power;
     }
-    static startrac(){
-        console.log("3....2.....1....GO!!!");
+
+    get power(){
+        return `${this._power}hp`;
+    }
+    get gas(){
+        return `${this._gas}L (${this._gas / 50 * 100}%)`
     }
 }
 
-const car1 = new cars("bugatti")
-const car2 = new cars("ferrari")
-const car3 = new cars("audi")
-
-
-console.log(`There are ${cars.no_of_cars} cars `);
-cars.startrac();
+let car = new Car(400);
+console.log(car.power);
+console.log(car.gas);
