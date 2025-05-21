@@ -385,4 +385,143 @@
 
 // children.forEach(child => child.style.backgroundColor = "lightblue")
 
-//
+//---add/chnage HTML elements--
+
+// const nameTag = document.createElement("h1");
+// nameTag.textContent=window.prompt("enter ur name");
+// document.body.append(nameTag)
+
+// const myList = document.querySelector("#fruits");
+// const listItems = document.createElement("li");
+// listItems.textContent = "carrot";
+// // myList.prepend(listItems);
+// myList.insertBefore(listItems,myList.getElementsByTagName("li")[1])
+
+///----add/change css properties--
+
+// const title = document.getElementById("myTitle");
+
+// title.style.backgroundColor ="pink";
+// title.style.color = "black";
+// title.style.fontFamily = "arial";
+// title.style.textAlign = "center";
+// title.style.border = "2px solid"
+
+//---events--
+
+// const element = document.getElementById("myButton");
+// const element = document.body;
+// const element = document.getElementById("myTextBox");
+// const element = document.getElementById("myDiv");
+
+// element.onclick = doSomething;
+// element.onload = doSomething;
+// element.onchange = doSomething;
+// // element.onmouseover = doSomething;
+// // element.onmouseout = doSomethingElse;
+// element.onmousedown = doSomething;
+// element.onmouseup = doSomethingElse;
+
+
+// function doSomething(){
+//     // document.getElementById("myButton").onclick = function(){
+//     //     document.getElementById("myLabel").innerHTML = "hello"
+//     // }
+//     // alert("you did something")
+//     element.style.backgroundColor = "pink";
+// }
+// function doSomethingElse(){
+//     element.style.backgroundColor="aqua"
+// }
+
+///---.addEventListener---
+
+// const innerdiv = document.getElementById("innerdiv");
+// const outerdiv = document.getElementById("outerdiv");
+
+// innerdiv.addEventListener("click", changeRed)
+// outerdiv.addEventListener("click",changeRed)
+
+// function changeRed(){
+//     this.style.backgroundColor = "red";
+    
+// }
+
+///---practic--
+
+// const myButton = document.querySelector("#myButton");
+// const myImage = document.querySelector("#myimg");
+
+// myButton.addEventListener("click",() => {
+//     if(myImage.style.visibility == "hidden"){
+//         myImage.style.visibility = "visible";
+//     }
+//     else{
+//         myImage.style.visibility = "hidden"
+//     }
+// })
+
+//detect key----
+
+// window.addEventListener("keydown", event => console.log(event.key))
+
+// const myDiv = document.getElementById("myDiv");
+// window.addEventListener("keydown", move);
+// let x=0;
+// let y=0;
+
+// function move(event){
+
+//     switch(event.key){
+//         case "ArrowDown":
+//             y+=5;
+//             myDiv.style.top = y +"px";
+//             break;
+//         case "ArrowUp":
+//             y-=5;
+//             myDiv.style.top = y +"px";
+//             break;
+//         case "ArrowRight":
+//             x+=5;
+//             myDiv.style.left = x +"px";
+//             break;
+//         case "ArrowLeft":
+//             x-=5;
+//             myDiv.style.left = x +"px";
+//             break;
+//         default:
+//             break;                    
+//     }
+// }
+
+///---canvas API
+
+// let canvas = document.getElementById("myCanvas");
+// let context = canvas.getContext("2d")
+
+// context.beginPath();
+// // // context.moveTo(0,0);
+// // // context.lineTo(500,500);
+// // // context.stroke()
+
+///---window--
+
+// console.log(window.innerHeight);
+// console.log(window.innerWidth);
+
+// console.log(window.location.href);
+// window.location.href = "https://google.com"
+// console.log(window.location.pathname);
+
+// const myButton = document.getElementById("myBtn");
+
+// myBtn.addEventListener("click", () => window.close())
+// myBtn.addEventListener("click", () => window.print())
+// myBtn.addEventListener("click", () => window.open("https://google.com"))
+
+// let age = window.prompt("enter ur age");
+
+// if(age < 18 ){
+//     window.alert("you mus 18 year to enetr this site");
+//     window.close();
+// }
